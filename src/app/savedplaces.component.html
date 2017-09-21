@@ -1,0 +1,10 @@
+<ul class="places ">
+    <li *ngFor="let place of places" class="btn-group btn-group-justified">
+        <span class="btn btn-default" >
+            {{place.name}}
+        </span>
+        <span class="btn btn-default" (click)="deleteSaved(place)">
+            X
+        </span>
+    </li>    
+</ul>
